@@ -1,0 +1,80 @@
+/* Reset basic margins and set font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    
+    /* CSS Grid Setup */
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; 
+    grid-template-columns: 3fr 1fr;         
+}
+
+/* Assign elements to the grid columns */
+header, footer {
+    grid-column: span 2; 
+}
+
+main {
+    grid-column: 1; 
+}
+
+aside {
+    grid-column: 2; 
+}
+
+/* Visual Styling */
+header {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* Flexbox for the Navigation Menu */
+nav {
+    background-color: #000000;
+    grid-column: span 2; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content Area Styling */
+main {
+    background-color: #cccccc;
+    color: #333333;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+aside {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2rem;
+}
