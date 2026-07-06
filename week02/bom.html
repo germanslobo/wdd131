@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Book of Mormon Top 10</title>
+    <meta name="description" content="Book of Mormon Top 10 list using DOM manipulation.">
+    <meta name="author" content="German Gerardo Sanchez Lobo">
+    <link rel="stylesheet" href="styles/bom.css">
+    <!-- Defer loading the script until the HTML parser finishes -->
+    <script src="scripts/bom.js" defer></script>
+</head>
+<body>
+    <h1>📖 Book of Mormon - Top 10</h1>
+    <main>
+        <div class="input-container">
+            <label for="favchap">Enter Book and Chapter:</label>
+            <input type="text" id="favchap" placeholder="Alma 5">
+            <button type="submit">Add Chapter</button>
+        </div>
+        <ul id="list"></ul>
+    </main>
+</body>
+</html>
