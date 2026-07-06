@@ -1,0 +1,14 @@
+/* Execute changes only for viewports 500px wide or greater */
+@media screen and (min-width: 500px) {
+    
+    /* Invert colors on the header element */
+    header {
+        background-color: #000;
+        color: #fff;
+    }
+
+    /* Transition the main container layout into two identical grid tracks */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
