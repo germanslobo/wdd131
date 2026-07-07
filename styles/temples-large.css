@@ -1,0 +1,32 @@
+/* Desktop Overrides */
+@media (min-width: 600px) {
+    #menu {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex !important; /* Always show nav on desktop */
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        max-width: 1000px; /* Constrain wide views */
+    }
+
+    /* 3-Column Layout for Desktop Grid */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

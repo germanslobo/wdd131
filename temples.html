@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A responsive picture album page featuring beautiful temples.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 600px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/temple1.jpg" alt="Mount Timpanogos Temple" loading="lazy">
+                <figcaption>Mount Timpanogos Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple2.jpg" alt="Philadelphia Temple" loading="lazy">
+                <figcaption>Philadelphia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple3.jpg" alt="Ogden, Utah Temple" loading="lazy">
+                <figcaption>Ogden, Utah Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple4.jpg" alt="RomaTemple" loading="lazy">
+                <figcaption>Roma Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple5.jpg" alt="Salt Lake City Temple" loading="lazy">
+                <figcaption>Salt Lake City Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple6.jpg" alt="San Diego California Temple" loading="lazy">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple7.jpg" alt="Layton, Utah Temple" loading="lazy">
+                <figcaption>Layton, Utah Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple8.jpg" alt="Draper Temple" loading="lazy">
+                <figcaption>Draper Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple9.jpg" alt="Mount Timpanogos Temple" loading="lazy">
+                <figcaption>Mount Timpanogos Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 German Sanchezx Lobo 🌸 Caracas, Venezuela</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
