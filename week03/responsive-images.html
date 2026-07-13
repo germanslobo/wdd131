@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Responsive Images Assignment</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- For screens 1000px wide or larger, use the large image -->
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                
+                <!-- For screens between 500px and 999px wide, use the medium image -->
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                
+                <!-- Fallback and default image for small screens -->
+                <img src="images/hero-small.webp" alt="The Bahía Blanca Argentina Temple landscape under an evening sky" width="500" height="250" loading="lazy">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
