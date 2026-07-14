@@ -1,0 +1,127 @@
+/* Global CSS Variables - Venezuela Flag Palette */
+:root {
+    --primary-color: #FCD116;   /* Yellow */
+    --secondary-color: #003893; /* Blue */
+    --accent-color: #CE1126;    /* Red */
+    --text-color: #222;
+    --bg-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.92);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text-color);
+    background-color: #f0f2f5;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+footer {
+    border-bottom: none;
+    border-top: 5px solid var(--accent-color);
+    font-size: 0.9rem;
+}
+
+/* Mobile-First Layout: Stacked vertically */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--bg-color);
+    margin: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    margin-bottom: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Weather SVG settings */
+.weather-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.weather-icon-svg {
+    width: 60px;
+    height: 60px;
+}
+
+.weather-card h2::after {
+    content: "";
+}
+
+/* --- Media Query for Desktop View --- */
+@media (min-width: 800px) {
+    .hero-container {
+        position: relative;
+        display: block;
+    }
+
+    .hero-img {
+        height: 650px;
+    }
+
+    /* Position cards directly over the background image */
+    .data-card {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 320px;
+        background-color: var(--card-bg);
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        width: 320px;
+        background-color: var(--card-bg);
+    }
+
+    /* Hide the mobile SVG icon in desktop view */
+    .weather-icon-container {
+        display: none;
+    }
+
+    /* Pseudo-element for weather emoji in desktop view */
+    .weather-card h2::after {
+        content: " ⛅";
+    }
+}

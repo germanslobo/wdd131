@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Venezuela</title>
+    <link rel="stylesheet" href="css/place.css">
+    <script src="js/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Venezuela</h1>
+    </header>
+
+    <main class="hero-container">
+        <!-- Hero image utilizing srcset for responsive images -->
+        <picture>
+            <source srcset="images/venezuela-large.webp" media="(min-width: 800px)">
+            <img src="images/venezuela-small.webp" alt="Majestic Mount Roraima in Venezuela" class="hero-img">
+        </picture>
+
+        <!-- Data Section -->
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 916,445 sq km</li>
+                <li><strong>Population:</strong> 28,200,000</li>
+                <li><strong>Capital:</strong> Caracas</li>
+                <li><strong>Languages:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Bolívar Digital</li>
+                <li><strong>Time Zone:</strong> UTC-4</li>
+                <li><strong>Calling Code:</strong> +58</li>
+                <li><strong>Internet TLD:</strong> .ve</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section (Mérida, Andes region) -->
+        <section class="card weather-card">
+            <h2>Weather</h2>
+            <!-- SVG weather icon for mobile view -->
+            <div class="weather-icon-container">
+                <img src="images/weather-icon.svg" alt="Cold and windy icon" class="weather-icon-svg">
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">5</span>°C</li>
+                <li><strong>Conditions:</strong> Foggy / Windy</li>
+                <li><strong>Wind:</strong> <span id="wind">15</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 German Sanchez Lobo 🌸 Roraima, Venezuela</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
