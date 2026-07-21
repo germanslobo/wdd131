@@ -1,0 +1,22 @@
+@media (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Grid layout for Desktop */
+    .res-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}

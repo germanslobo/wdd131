@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a148c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Mobile Hamburger Toggle */
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4a148c;
+    z-index: 100;
+}
+
+nav.show {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover, nav a.active {
+    background-color: #6a1b9a;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Responsive Grid - 1 Column on Mobile */
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Temple Card Design matching assignment wireframe */
+.temple-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.temple-card h3 {
+    margin-top: 0;
+    color: #111;
+    font-size: 1.25rem;
+}
+
+.temple-card p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.temple-card .label {
+    font-weight: bold;
+    color: #4a148c;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
